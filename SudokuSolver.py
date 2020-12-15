@@ -36,8 +36,17 @@ def number_input():
         userinput = input()
         if userinput.isdigit() and int(userinput) < 10: return userinput
 
+#This will update board based on user.input
+def enter_num_in_box():
+    for x in range(len(board)):
+        for y in range(len(board[0])):
+            if board[x][y] == 0: board[x][y] = 'x'
+    return board
 
-#y = number_input()
+#print_board(board)
+print_board(enter_num_in_box())
 
-#print(y)
+# y = number_input()
+
+# print(y)
 # print_board(board)
