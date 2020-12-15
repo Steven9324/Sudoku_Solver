@@ -30,4 +30,14 @@ def print_board(bo):
                 print(str(bo[i][j]) + " ", end="")
 
 
-print_board(board)
+def number_input():
+    while True:
+        print("Please input your number")
+        userinput = input()
+        if userinput.isdigit() and int(userinput) < 10: return userinput
+
+
+#y = number_input()
+
+#print(y)
+# print_board(board)
